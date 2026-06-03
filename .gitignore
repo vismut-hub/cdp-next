@@ -1,0 +1,10 @@
+# OS / tooling
+.DS_Store
+*.log
+.claude/
+
+# Internal working material — not part of the public demo
+HANDOFF.md
+legacy/
+new big update/
+cdp logo.svg.png
