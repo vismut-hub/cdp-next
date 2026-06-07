@@ -1046,6 +1046,51 @@
   }
   #page-hr .mt-precision-bar-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2)); border-radius: 100px; }
 
+  /* HR · Talent Data Matrix (Phase 1 recruitment + Phase 2 workforce data hub) */
+  #page-hr .tdm-section { margin: 24px 0 14px; }
+  #page-hr .tdm-phase-pill { display: inline-block; font-family: var(--body); font-size: 11px; font-weight: 800; letter-spacing: 0.6px; color: #fff; background: linear-gradient(135deg, #6c5ce7, #a29bfe); padding: 3px 11px; border-radius: 100px; }
+  #page-hr .tdm-phase-pill.phase2 { background: linear-gradient(135deg, #00a88e, #3dd4b6); }
+  #page-hr .tdm-section-title { font-size: 18px; font-weight: 800; letter-spacing: -0.3px; margin-top: 8px; }
+  #page-hr .tdm-section-sub { font-family: var(--body); font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+  #page-hr .tdm-bars { display: flex; flex-direction: column; gap: 16px; padding: 6px 0; }
+  #page-hr .tdm-bar-row { display: grid; grid-template-columns: 150px 1fr 42px; align-items: center; gap: 12px; }
+  #page-hr .tdm-bar-label { font-family: var(--body); font-size: 13px; color: var(--text2); font-weight: 600; }
+  #page-hr .tdm-bar-track { height: 12px; background: var(--bg2); border-radius: 100px; overflow: hidden; }
+  #page-hr .tdm-bar-fill { height: 100%; border-radius: 100px; }
+  #page-hr .tdm-bar-pct { font-family: var(--body); font-size: 13px; font-weight: 700; color: var(--text); text-align: right; }
+
+  #page-hr .tdm-stack { display: flex; height: 30px; border-radius: 8px; overflow: hidden; margin: 8px 0 16px; }
+  #page-hr .tdm-stack-seg { display: flex; align-items: center; justify-content: center; color: #fff; font-family: var(--body); font-size: 12px; font-weight: 700; }
+  #page-hr .tdm-legend { display: flex; flex-direction: column; gap: 9px; }
+  #page-hr .tdm-legend-item { display: flex; align-items: center; gap: 8px; font-family: var(--body); font-size: 13px; color: var(--text2); }
+  #page-hr .tdm-legend-dot { width: 11px; height: 11px; border-radius: 3px; flex: none; }
+
+  #page-hr .tdm-alert { display: flex; gap: 14px; align-items: flex-start; padding: 16px 18px; margin-bottom: 18px; border-radius: 14px; border: 1px solid #e6c98a; border-left: 4px solid var(--gold); background: linear-gradient(135deg, rgba(108,92,231,0.08), rgba(217,164,62,0.14)); }
+  #page-hr .tdm-alert-icon { font-size: 22px; line-height: 1.2; }
+  #page-hr .tdm-alert-title { font-size: 14px; font-weight: 800; color: var(--text); }
+  #page-hr .tdm-alert-text { font-family: var(--body); font-size: 13px; line-height: 1.55; color: var(--text2); margin-top: 3px; }
+
+  #page-hr .tdm-dept-layout { display: grid; grid-template-columns: 270px 1fr; gap: 18px; margin-bottom: 18px; }
+  #page-hr .tdm-dept-dir { display: flex; flex-direction: column; gap: 6px; }
+  #page-hr .tdm-dept-item { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 10px; border: 1px solid transparent; font-family: var(--body); font-size: 13.5px; font-weight: 600; color: var(--text2); cursor: pointer; transition: all .15s; }
+  #page-hr .tdm-dept-item:hover { background: var(--surface2); }
+  #page-hr .tdm-dept-ic { font-size: 16px; flex: none; }
+  #page-hr .tdm-dept-item.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  #page-hr .tdm-dept-gap { margin-left: auto; font-size: 11px; font-weight: 700; color: var(--muted); }
+  #page-hr .tdm-dept-item.active .tdm-dept-gap { color: rgba(255,255,255,0.85); }
+
+  #page-hr .tdm-insights-title { font-size: 15px; font-weight: 800; margin-bottom: 16px; }
+  #page-hr .tdm-pie-wrap { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+  #page-hr .tdm-pie { width: 150px; height: 150px; border-radius: 50%; position: relative; flex: none; box-shadow: var(--shadow-sm); }
+  #page-hr .tdm-pie-hole { position: absolute; inset: 30px; background: var(--surface); border-radius: 50%; }
+  #page-hr .tdm-quotes { margin-top: 18px; padding-top: 16px; border-top: 1px dashed var(--border); display: flex; flex-direction: column; gap: 10px; }
+  #page-hr .tdm-quotes-head { font-family: var(--body); font-size: 11px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--muted); }
+  #page-hr .tdm-quote { display: flex; gap: 10px; padding: 12px 14px; background: var(--surface2); border: 1px solid var(--border); border-left: 3px solid var(--accent2); border-radius: 10px; font-family: var(--body); font-size: 13px; line-height: 1.5; color: var(--text2); }
+  #page-hr .tdm-quote-ic { color: var(--accent2); font-weight: 800; font-size: 18px; line-height: 1; }
+
+  @media (max-width: 760px) { #page-hr .tdm-dept-layout { grid-template-columns: 1fr; } }
+
   #page-hr .mt-why {
     background: linear-gradient(135deg, #f1effc 0%, #e5f7f3 100%);
     border: 1px solid #e3dffb; border-radius: 14px; padding: 22px 24px;
@@ -2040,7 +2085,7 @@
       <div class="nav-section">AI tools</div>
       <a class="nav-item" data-subview="copilot" onclick="switchHRSubview('copilot',this)"><span class="nav-icon">✨</span>Co-pilot</a>
       <a class="nav-item" data-subview="bridgemap" onclick="switchHRSubview('bridgemap',this)"><span class="nav-icon">🌉</span>The Bridge Map</a>
-      <a class="nav-item" data-subview="modeltraining" onclick="switchHRSubview('modeltraining',this)"><span class="nav-icon">🧠</span>Model Training<span class="nav-badge-new">NEW</span></a>
+      <a class="nav-item" data-subview="modeltraining" onclick="switchHRSubview('modeltraining',this)"><span class="nav-icon">🗂️</span>Talent Data Matrix<span class="nav-badge-new">NEW</span></a>
       <div class="nav-section">Account</div>
       <a class="nav-item" data-subview="settings" onclick="switchHRSubview('settings',this)"><span class="nav-icon">⚙️</span>Settings</a>
 
@@ -2242,12 +2287,12 @@
         <!-- ─── SUBVIEW: MODEL TRAINING (NEW) ─── -->
         <div class="hr-subview" id="hr-modeltraining">
           <div class="mt-header">
-            <div class="mt-header-icon">🧠</div>
+            <div class="mt-header-icon">🗂️</div>
             <div>
-              <div class="mt-header-title">Skills Intelligence Model · v3.2.1</div>
-              <div class="mt-header-sub">Last trained 4 hours ago · trained on 1,847 CDP Exchange interactions</div>
+              <div class="mt-header-title">Talent Data Matrix</div>
+              <div class="mt-header-sub">Unified talent signal · 1,643 data points across Recruitment &amp; Workforce · synced 4h ago</div>
             </div>
-            <button class="mt-retrain-btn" id="mtRetrainBtn" onclick="retrainModel()">↻ Retrain on latest data</button>
+            <button class="mt-retrain-btn" id="mtRetrainBtn" onclick="retrainModel()">↻ Sync latest data</button>
           </div>
           <div id="mtProgressWrap" style="display:none; margin-bottom:18px;">
             <div class="mt-progress"><div class="mt-progress-fill" id="mtProgressFill"></div></div>
@@ -2256,7 +2301,7 @@
           <div class="mt-metrics">
             <div class="mt-metric">
               <div class="mt-metric-label">Training sources</div>
-              <div class="mt-metric-value">1,847</div>
+              <div class="mt-metric-value">1,643</div>
               <div class="mt-metric-delta">+184 this month</div>
             </div>
             <div class="mt-metric">
@@ -2276,97 +2321,78 @@
             </div>
           </div>
 
-          <div class="card" style="margin-bottom:18px;">
-            <div class="card-head">
-              <div><div class="card-title">How the model learns</div><div class="card-sub">A closed loop between current employees, AI, and incoming graduates.</div></div>
-            </div>
-            <div class="mt-flow">
-              <div class="mt-flow-box highlight">
-                <div class="mt-flow-icon">🔄</div>
-                <div class="mt-flow-title">1 · CDP Exchange sessions</div>
-                <div class="mt-flow-sub">Senior &amp; junior employees teach &amp; learn skills together.</div>
-              </div>
-              <div class="mt-flow-arrow">→</div>
-              <div class="mt-flow-box">
-                <div class="mt-flow-icon">🧩</div>
-                <div class="mt-flow-title">2 · Skill ontology extraction</div>
-                <div class="mt-flow-sub">AI clusters real-world skills into nodes &amp; tags.</div>
-              </div>
-              <div class="mt-flow-arrow">→</div>
-              <div class="mt-flow-box">
-                <div class="mt-flow-icon">⚙️</div>
-                <div class="mt-flow-title">3 · Monthly fine-tuning</div>
-                <div class="mt-flow-sub">Model re-weights based on what teams actually need.</div>
-              </div>
-              <div class="mt-flow-arrow">→</div>
-              <div class="mt-flow-box">
-                <div class="mt-flow-icon">🎯</div>
-                <div class="mt-flow-title">4 · Better candidate matching</div>
-                <div class="mt-flow-sub">Applicant portfolios score against the live skill graph.</div>
-              </div>
-            </div>
+          <!-- ─── Recruitment Intelligence ─── -->
+          <div class="tdm-section">
+            <div class="tdm-section-title">Recruitment Intelligence</div>
+            <div class="tdm-section-sub">Signal from external AI quizzes — the last 100 applicants.</div>
           </div>
-
           <div class="mt-grid">
             <div class="card">
-              <div class="card-head">
-                <div><div class="card-title">Skill ontology growth</div><div class="card-sub">Total skill nodes in the graph, Jan 2026 → Jun 2026.</div></div>
-              </div>
+              <div class="card-head"><div><div class="card-title">Applicant Background Breakdown</div><div class="card-sub">Academic backgrounds of the last 100 applicants.</div></div></div>
               <div class="card-body">
-                <div class="mt-chart-bars" id="mtChartBars"></div>
-                <div class="mt-examples-head">Recent skill nodes added in June</div>
-                <div class="mt-examples">
-                  <span class="mt-tag mt-tag-new">+ AI-native due diligence</span>
-                  <span class="mt-tag mt-tag-new">+ EU state-aid compliance</span>
-                  <span class="mt-tag">Valuation modelling</span>
-                  <span class="mt-tag">Term-sheet structuring</span>
-                  <span class="mt-tag">Co-investor coordination</span>
-                  <span class="mt-tag">Power BI dashboards</span>
-                  <span class="mt-tag">Macro analysis</span>
-                  <span class="mt-tag mt-tag-new">+ Stakeholder mapping</span>
-                  <span class="mt-tag">Bayesian credit risk</span>
-                  <span class="mt-tag mt-tag-new">+ Italian SME financing</span>
+                <div class="tdm-bars">
+                  <div class="tdm-bar-row"><div class="tdm-bar-label">Engineering</div><div class="tdm-bar-track"><div class="tdm-bar-fill" style="width:45%;background:#6c5ce7;"></div></div><div class="tdm-bar-pct">45%</div></div>
+                  <div class="tdm-bar-row"><div class="tdm-bar-label">Business &amp; Economics</div><div class="tdm-bar-track"><div class="tdm-bar-fill" style="width:35%;background:#d9a43e;"></div></div><div class="tdm-bar-pct">35%</div></div>
+                  <div class="tdm-bar-row"><div class="tdm-bar-label">Data Science / Other</div><div class="tdm-bar-track"><div class="tdm-bar-fill" style="width:20%;background:#00a88e;"></div></div><div class="tdm-bar-pct">20%</div></div>
                 </div>
               </div>
             </div>
             <div class="card">
-              <div class="card-head">
-                <div><div class="card-title">Per-department match precision</div><div class="card-sub">Hold-out accuracy by team — Q1 2026.</div></div>
-              </div>
-              <div class="card-body" style="padding-top:6px;">
-                <table class="mt-precision-table">
-                  <thead><tr><th>Department</th><th style="text-align:right;">Precision</th></tr></thead>
-                  <tbody>
-                    <tr><td>Business</td><td style="text-align:right;"><span class="mt-precision-bar"><span class="mt-precision-bar-fill" style="display:block;width:94%;height:100%;"></span></span><strong>94%</strong></td></tr>
-                    <tr><td>Risk</td><td style="text-align:right;"><span class="mt-precision-bar"><span class="mt-precision-bar-fill" style="display:block;width:91%;height:100%;"></span></span><strong>91%</strong></td></tr>
-                    <tr><td>Admin &amp; Finance</td><td style="text-align:right;"><span class="mt-precision-bar"><span class="mt-precision-bar-fill" style="display:block;width:89%;height:100%;"></span></span><strong>89%</strong></td></tr>
-                    <tr><td>Legal &amp; Regulatory</td><td style="text-align:right;"><span class="mt-precision-bar"><span class="mt-precision-bar-fill" style="display:block;width:88%;height:100%;"></span></span><strong>88%</strong></td></tr>
-                    <tr><td>Strategy &amp; Impact</td><td style="text-align:right;"><span class="mt-precision-bar"><span class="mt-precision-bar-fill" style="display:block;width:86%;height:100%;"></span></span><strong>86%</strong></td></tr>
-                  </tbody>
-                </table>
+              <div class="card-head"><div><div class="card-title">Role Demand Distribution</div><div class="card-sub">Where the last 100 candidates are applying.</div></div></div>
+              <div class="card-body">
+                <div class="tdm-stack">
+                  <div class="tdm-stack-seg" style="width:40%;background:#6c5ce7;">40%</div>
+                  <div class="tdm-stack-seg" style="width:35%;background:#d9a43e;">35%</div>
+                  <div class="tdm-stack-seg" style="width:25%;background:#00a88e;">25%</div>
+                </div>
+                <div class="tdm-legend">
+                  <div class="tdm-legend-item"><span class="tdm-legend-dot" style="background:#6c5ce7;"></span>Business Development · <strong style="color:var(--text);margin-left:4px;">40%</strong></div>
+                  <div class="tdm-legend-item"><span class="tdm-legend-dot" style="background:#d9a43e;"></span>Data Analyst · <strong style="color:var(--text);margin-left:4px;">35%</strong></div>
+                  <div class="tdm-legend-item"><span class="tdm-legend-dot" style="background:#00a88e;"></span>Accounting · <strong style="color:var(--text);margin-left:4px;">25%</strong></div>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="card" style="margin-bottom:18px;">
-            <div class="card-head">
-              <div><div class="card-title">Recent model improvements</div><div class="card-sub">Auto-logged each time a retraining cycle completes.</div></div>
-            </div>
+            <div class="card-head"><div><div class="card-title">Top Applicant Traits</div><div class="card-sub">Strengths from recent AI quizzes — mapped to the internal skill gaps they can close.</div></div></div>
             <div class="card-body">
-              <div class="mt-log">
-                <div class="mt-log-row"><div class="mt-log-date">JUN 15</div><div class="mt-log-text">Added 47 new private-markets skill nodes from 12 senior↔junior Exchange pairs. Match accuracy on Business roles +3.2%.</div></div>
-                <div class="mt-log-row"><div class="mt-log-date">JUN 09</div><div class="mt-log-text">Re-weighted "public speaking" against finance-track applicants after 3 hiring misses last quarter. Model now flags the gap.</div></div>
-                <div class="mt-log-row"><div class="mt-log-date">JUN 02</div><div class="mt-log-text">Imported 14 new "pains" entries from senior employees. Model treats "deal-diligence backlog" as a hidden seniority signal worth +2.1pp.</div></div>
-                <div class="mt-log-row"><div class="mt-log-date">MAY 24</div><div class="mt-log-text">Onboarded 8 new senior teachers to Exchange — model now covers AI-native due-diligence literacy as a first-class skill.</div></div>
+              <div class="tdm-bars">
+                <div class="tdm-bar-row"><div class="tdm-bar-label">AI-native diligence / AI Prompting</div><div class="tdm-bar-track"><div class="tdm-bar-fill" style="width:65%;background:#d9a43e;"></div></div><div class="tdm-bar-pct">65%</div></div>
+                <div class="tdm-bar-row"><div class="tdm-bar-label">Advanced Data Analytics</div><div class="tdm-bar-track"><div class="tdm-bar-fill" style="width:55%;background:#6c5ce7;"></div></div><div class="tdm-bar-pct">55%</div></div>
+                <div class="tdm-bar-row"><div class="tdm-bar-label">ESG Regulatory Frameworks</div><div class="tdm-bar-track"><div class="tdm-bar-fill" style="width:40%;background:#00a88e;"></div></div><div class="tdm-bar-pct">40%</div></div>
               </div>
             </div>
           </div>
 
+          <div class="tdm-alert">
+            <div class="tdm-alert-icon">📈</div>
+            <div>
+              <div class="tdm-alert-title">Emerging Market Trend Flagged</div>
+              <div class="tdm-alert-text">A high volume of incoming graduates possess strong <strong>'AI-native diligence'</strong> skills. <strong>Recommendation:</strong> Integrate this competency into the CDP Exchange for Reverse Mentoring.</div>
+            </div>
+          </div>
+
+          <!-- ─── Internal Workforce Intelligence ─── -->
+          <div class="tdm-section">
+            <div class="tdm-section-title">Internal Workforce Intelligence</div>
+            <div class="tdm-section-sub">Seniors' monthly AI quizzes on project workflows &amp; missing skills.</div>
+          </div>
+          <div class="tdm-dept-layout">
+            <div class="card">
+              <div class="card-head"><div><div class="card-title">Department Directory</div><div class="card-sub">Select a team to view its signal.</div></div></div>
+              <div class="card-body" style="padding-top:8px;">
+                <div class="tdm-dept-dir" id="tdmDeptDir"></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body" id="tdmDeptInsights"></div>
+            </div>
+          </div>
+
           <div class="mt-why">
-            <h4>Why this matters for CDP</h4>
-            <p>The Skills Intelligence Model converts each CDP Exchange session — a senior teaching a junior, or vice versa — into structured signal. That signal supports both objectives of project P01:</p>
-            <p>① <strong>Attracting younger generations</strong>: incoming graduates are matched to roles where their real skills overlap with what current teams need today, not what the org chart claimed yesterday.</p>
-            <p>② <strong>Reskilling &amp; valorising seniors</strong>: every taught skill becomes a measurable contribution to the model, surfacing senior knowledge that would otherwise stay tacit — and steering reskilling pathways for those who need them.</p>
+            <h4>One continuous talent journey</h4>
+            <p>The <strong>Talent Data Matrix</strong> shows how data collected from applicants and current employees transforms into one continuous information flow. The skill gaps identified by senior employees during their daily projects dynamically update the exact competencies the AI prioritizes when screening incoming candidates. Conversely, the fresh strengths these new graduates bring—such as <strong>AI-native diligence</strong>—flow seamlessly back into the internal workforce through the CDP Exchange as reverse-mentoring opportunities for the seniors, creating a unified cycle of organizational growth.</p>
           </div>
         </div>
 
@@ -3472,11 +3498,11 @@ function switchHRSubview(id, btn) {
   const titles = {
     overview:"Overview", candidates:"Candidates", interviews:"Interviews",
     outreach:"Outreach", copilot:"AI Co-pilot", bridgemap:"The Bridge Map",
-    modeltraining:"AI Model Training", settings:"Settings"
+    modeltraining:"Talent Data Matrix", settings:"Settings"
   };
   document.getElementById('hrPageTitle').textContent = titles[id] || id;
   hrState.subview = id;
-  if (id === 'modeltraining') renderModelChart();
+  if (id === 'modeltraining') renderTalentMatrix();
   if (id === 'bridgemap') renderBridgeMap();
   document.getElementById('hrSidebar').classList.remove('open');
 }
@@ -3645,24 +3671,52 @@ function hrCloseDrawer() {
   document.getElementById("hrDrawer").classList.remove("show");
 }
 
-/* ── Model Training (HR sub-view) ─────────────────────────────── */
-const MT_GROWTH = [
-  { month:"JAN", nodes:367 }, { month:"FEB", nodes:451 }, { month:"MAR", nodes:524 },
-  { month:"APR", nodes:601 }, { month:"MAY", nodes:678 }, { month:"JUN", nodes:742 }
-];
-function renderModelChart() {
-  const host = document.getElementById("mtChartBars");
-  if (!host) return;
-  const max = Math.max(...MT_GROWTH.map(g => g.nodes));
-  host.innerHTML = MT_GROWTH.map(g => `
-    <div class="mt-chart-bar-wrap">
-      <div class="mt-chart-bar" data-h="${(g.nodes/max)*100}" style="height:0%;"><span class="mt-chart-val">${g.nodes}</span></div>
-      <div class="mt-chart-label">${g.month}</div>
-    </div>`).join("");
-  requestAnimationFrame(() => {
-    setTimeout(() => host.querySelectorAll(".mt-chart-bar").forEach(b => b.style.height = b.dataset.h + "%"), 60);
-  });
+/* ── Talent Data Matrix (HR sub-view) · Phase 2 interactive department insights ── */
+const TALENT_DEPT_INSIGHTS = {
+  business:   { gaps:[{label:"Advanced Data Analytics",pct:45,c:"#6c5ce7"},{label:"AI Prompting",pct:35,c:"#d9a43e"},{label:"ESG Regulatory Frameworks",pct:20,c:"#00a88e"}],
+    quotes:["Seniors reported that a lack of advanced data-scraping tools slowed down the Q3 market-analysis phase. Recommend connecting with incoming Data Science graduates.","Deal teams want faster AI-native comparable screening — pair with graduates strong in 'AI-native diligence'."] },
+  pubadmin:   { gaps:[{label:"Digital Public Services",pct:50,c:"#6c5ce7"},{label:"Procurement Analytics",pct:30,c:"#d9a43e"},{label:"Policy Impact Modelling",pct:20,c:"#00a88e"}],
+    quotes:["Approval workflows still rely on manual document checks — seniors flagged automation as the top time-sink.","A recurring stakeholder-mapping gap across public bodies slowed two grant programmes."] },
+  risk:       { gaps:[{label:"ML Model Validation",pct:45,c:"#6c5ce7"},{label:"Real-time Data Pipelines",pct:30,c:"#d9a43e"},{label:"Climate Risk Modelling",pct:25,c:"#00a88e"}],
+    quotes:["Model-validation backlog grew last quarter; seniors asked for graduates fluent in Python and ML testing.","Stress-test scenarios need faster data pipelines — current tooling can't refresh intraday."] },
+  realestate: { gaps:[{label:"Geospatial Analytics",pct:40,c:"#6c5ce7"},{label:"Digital-Twin Tools",pct:35,c:"#d9a43e"},{label:"ESG Building Standards",pct:25,c:"#00a88e"}],
+    quotes:["Valuation inputs arrive in inconsistent formats — seniors want help standardising the rent-roll data.","Site-visit scheduling clashes with deadlines; a graduate-built tracker could free senior time."] },
+  strategy:   { gaps:[{label:"Impact Measurement",pct:45,c:"#6c5ce7"},{label:"Scenario Modelling",pct:35,c:"#d9a43e"},{label:"Data Storytelling",pct:20,c:"#00a88e"}],
+    quotes:["Too many ad-hoc data pulls interrupt deep strategy work — automation is the requested fix.","Seniors want clearer impact dashboards to present mandates to the committee."] },
+  legal:      { gaps:[{label:"AI Contract Review (RegTech)",pct:50,c:"#6c5ce7"},{label:"EU State-aid Law",pct:30,c:"#d9a43e"},{label:"Compliance Automation",pct:20,c:"#00a88e"}],
+    quotes:["Contract-review queues spike at quarter-end; an AI first-pass redline would cut hours.","Regulatory updates land with little lead time — seniors asked for a monitoring graduate."] },
+  euint:      { gaps:[{label:"Multilingual Policy Analysis",pct:40,c:"#6c5ce7"},{label:"EU Funding Frameworks",pct:35,c:"#d9a43e"},{label:"Digital Comms",pct:25,c:"#00a88e"}],
+    quotes:["Limited time-zone overlap with Brussels slows positions — async tooling was requested.","A junior-led digital-comms revamp landed well and seniors want to scale it."] },
+  coopdev:    { gaps:[{label:"Blended-Finance Modelling",pct:45,c:"#6c5ce7"},{label:"Impact Data Collection",pct:35,c:"#d9a43e"},{label:"Partner Reporting",pct:20,c:"#00a88e"}],
+    quotes:["Field data arrives late from partners; seniors asked for a graduate to build a tracker.","Reporting standards vary by donor — a shared template would save weeks."] },
+  invpeople:  { gaps:[{label:"People Analytics",pct:45,c:"#6c5ce7"},{label:"HR Automation",pct:30,c:"#d9a43e"},{label:"Change-Management Tools",pct:25,c:"#00a88e"}],
+    quotes:["Onboarding paperwork drags through week one — automation was the top ask.","Exit-interview insights aren't reaching managers fast enough; seniors want a dashboard."] },
+  adminfin:   { gaps:[{label:"Finance Automation / RPA",pct:45,c:"#6c5ce7"},{label:"Sustainability Reporting",pct:35,c:"#d9a43e"},{label:"Data Visualisation",pct:20,c:"#00a88e"}],
+    quotes:["Manual reconciliations still slow month-end; seniors asked for RPA-fluent graduates.","Reporting templates differ across teams — a shared close-checklist cut errors."] }
+};
+function tdmPieGradient(gaps){ let a=0; return "conic-gradient(" + gaps.map(g => { const seg = `${g.c} ${a}% ${a+g.pct}%`; a += g.pct; return seg; }).join(", ") + ")"; }
+function renderTalentDirectory(){
+  const host = document.getElementById("tdmDeptDir"); if (!host) return;
+  const active = hrState.talentDept || "business";
+  host.innerHTML = CDP_DEPARTMENTS.map(c => {
+    const ins = TALENT_DEPT_INSIGHTS[c.id];
+    const top = ins && ins.gaps[0] ? ins.gaps[0].pct + "%" : "";
+    return `<div class="tdm-dept-item${c.id===active?" active":""}" onclick="selectTalentDept('${c.id}')"><span class="tdm-dept-ic">${c.icon}</span><span>${c.short||c.name}</span><span class="tdm-dept-gap">${top}</span></div>`;
+  }).join("");
 }
+function renderTalentDeptInsights(id){
+  const host = document.getElementById("tdmDeptInsights"); if (!host) return;
+  const c = CDP_DEPARTMENTS.find(x => x.id === id) || CDP_DEPARTMENTS[0];
+  const d = TALENT_DEPT_INSIGHTS[id] || TALENT_DEPT_INSIGHTS.business;
+  const legend = d.gaps.map(g => `<div class="tdm-legend-item"><span class="tdm-legend-dot" style="background:${g.c};"></span>${g.label} <strong style="color:var(--text);margin-left:4px;">${g.pct}%</strong></div>`).join("");
+  const quotes = d.quotes.map(q => `<div class="tdm-quote"><span class="tdm-quote-ic">“</span><span>${q}</span></div>`).join("");
+  host.innerHTML =
+    `<div class="tdm-insights-title">Identified Skill Gaps (${c.short||c.name} Dept.)</div>` +
+    `<div class="tdm-pie-wrap"><div class="tdm-pie" style="background:${tdmPieGradient(d.gaps)};"><div class="tdm-pie-hole"></div></div><div class="tdm-legend">${legend}</div></div>` +
+    `<div class="tdm-quotes"><div class="tdm-quotes-head">📋 Project Insights Feed · AI-extracted from monthly quizzes</div>${quotes}</div>`;
+}
+function selectTalentDept(id){ hrState.talentDept = id; renderTalentDirectory(); renderTalentDeptInsights(id); }
+function renderTalentMatrix(){ hrState.talentDept = hrState.talentDept || "business"; renderTalentDirectory(); renderTalentDeptInsights(hrState.talentDept); }
 function retrainModel() {
   const btn = document.getElementById("mtRetrainBtn");
   const wrap = document.getElementById("mtProgressWrap");
@@ -3676,10 +3730,10 @@ function retrainModel() {
     fill.style.width = pct + "%";
     if (pct === 100) {
       setTimeout(() => {
-        btn.disabled = false; btn.innerHTML = "↻ Retrain on latest data";
+        btn.disabled = false; btn.innerHTML = "↻ Sync latest data";
         wrap.style.display = "none";
         document.getElementById("mtAccuracy").textContent = "92.6%";
-        showToast("Retrain complete · accuracy 92.4% → 92.6%", "🧠");
+        showToast("Sync complete · accuracy 92.4% → 92.6%", "🗂️");
       }, 250);
     }
   }, 80);
